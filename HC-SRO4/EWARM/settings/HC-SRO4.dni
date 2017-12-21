@@ -14,7 +14,7 @@ Watch0=_ 0 "" 0 "" 0 "" 0 "" 0 0 0 0
 Watch1=_ 0 "" 0 "" 0 "" 0 "" 0 0 0 0
 CStepIntDis=_ 0
 [DebugChecksum]
-Checksum=1464014506
+Checksum=539954431
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -22,6 +22,10 @@ StopOnThrow=_ 0
 ShowArgs=0
 [Disassembly]
 MixedMode=1
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -29,6 +33,9 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
+[Aliases]
+Count=0
+SuppressDialog=0
 [CallStackLog]
 Enabled=0
 [DriverProfiling]
@@ -37,10 +44,3 @@ Mode=0
 Graph=0
 Symbiont=0
 Exclusions=
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-Count=0
-[Aliases]
-Count=0
-SuppressDialog=0

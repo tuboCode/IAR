@@ -19,6 +19,22 @@
 @REM 
 
 
-"D:\软件\Embedded Workbench 7.0\common\bin\cspybat" "D:\软件\Embedded Workbench 7.0\arm\bin\armproc.dll" "D:\软件\Embedded Workbench 7.0\arm\bin\armjlink.dll"  %1 --plugin "D:\软件\Embedded Workbench 7.0\arm\bin\armbat.dll" --device_macro "D:\软件\Embedded Workbench 7.0\arm\config\debugger\ST\STM32F1xx.dmac" --flash_loader "D:\软件\Embedded Workbench 7.0\arm\config\flashloader\ST\FlashSTM32F10xx8.board" --backend -B "--endian=little" "--cpu=Cortex-M3" "--fpu=None" "-p" "D:\软件\Embedded Workbench 7.0\arm\CONFIG\debugger\ST\STM32F103x8.ddf" "--drv_verify_download" "--semihosting" "--device=STM32F103x8" "--drv_communication=USB0" "--jlink_speed=100" "--jlink_reset_strategy=0,0" "--drv_catch_exceptions=0x000" "--drv_swo_clock_setup=72000000,0,2000000" 
+@echo off 
 
+if not "%~1" == "" goto debugFile 
 
+@echo on 
+
+"D:\SoftWa\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\WorkSpace\IAR\HC-SRO4\EWARM\settings\HC-SRO4.HC-SRO4.general.xcl" --backend -f "D:\WorkSpace\IAR\HC-SRO4\EWARM\settings\HC-SRO4.HC-SRO4.driver.xcl" 
+
+@echo off 
+goto end 
+
+:debugFile 
+
+@echo on 
+
+"D:\SoftWa\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\WorkSpace\IAR\HC-SRO4\EWARM\settings\HC-SRO4.HC-SRO4.general.xcl" "--debug_file=%~1" --backend -f "D:\WorkSpace\IAR\HC-SRO4\EWARM\settings\HC-SRO4.HC-SRO4.driver.xcl" 
+
+@echo off 
+:end

@@ -1,0 +1,15 @@
+"D:\SoftWa\Embedded Workbench 8.0\arm\bin\armproc.dll" 
+
+"D:\SoftWa\Embedded Workbench 8.0\arm\bin\armjlink2.dll" 
+
+"D:\WorkSpace\IAR\HC-SRO4\EWARM\HC-SRO4\Exe\HC-SRO4.out" 
+
+--plugin "D:\SoftWa\Embedded Workbench 8.0\arm\bin\armbat.dll" 
+
+--device_macro "D:\SoftWa\Embedded Workbench 8.0\arm\config\debugger\ST\STM32F1xx_XL.dmac" 
+
+--flash_loader "D:\SoftWa\Embedded Workbench 8.0\arm\config\flashloader\ST\FlashSTM32F10xx8.board" 
+
+
+
+
